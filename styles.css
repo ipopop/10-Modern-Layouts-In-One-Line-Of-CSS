@@ -24,11 +24,12 @@ h2 {
     background-color: hsla(0, 0%, 100%, 0.85);
     padding: 8px;
     border-radius: 5px;
+    margin-top: 30px;
+    text-align: center;
 }
 
 h1 {
     font-size: 20px;
-    margin-top: 30px;
     color: rgba(15, 5, 9, 0.75);
 }
 
@@ -37,9 +38,7 @@ h1 em {
 }
 
 h2 {
-    text-align: center;
     font-size: 16px;
-    margin-top: 30px;
     color: hsla(106, 93%, 35%, 0.75);
 }
 
@@ -195,4 +194,29 @@ footer.box {
     place-items: center;
     height: 100px;
     font-size: 1.5rem;
+}
+
+.ex8 .parent {
+    height: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+}
+
+.ex8 .card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.ex8 .visual {
+    height: 100px;
+    width: 100%;
+    background-color: hsla(170, 30%, 50%, 0.7);
+}
+
+.ex8 p {
+    padding: 10px;
 }
