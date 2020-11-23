@@ -1,10 +1,10 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 html {
-    margin: 0;
-    padding: 0;
     font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
     font-size: 14px;
     color: #555;
@@ -18,12 +18,13 @@ body {
 
 h1 {
     font-size: 20px;
+    margin-top: 30px;
 }
 
 h2 {
     text-align: center;
+    font-size: 16px;
     margin-top: 30px;
-    margin-bottom: 5px;
 }
 
 .parent {
@@ -45,12 +46,16 @@ h2 {
     background-color: hsl(30, 80%, 80%);
     color: #333;
     border-radius: 5px;
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
 .ex1 .parent {
     display: grid;
     place-items: center;
+}
+
+.ex1 .box {
+    font-size: 3rem;
 }
 
 .ex2 .parent {
@@ -63,4 +68,76 @@ h2 {
     flex: 1 1 150px; /* Stretching */
     flex: 0 1 150px; /* No stretching */
     margin: 5px;
+    font-size: 2rem;
+}
+
+.ex3 .parent {
+    display: grid;
+    grid-template-columns: minmax(150px, 25%) 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ex3 .box {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 10px;
+}
+
+.ex4 .parent {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.box {
+    display: block;
+    padding: 10px;
+    min-height: 30px;
+    min-width: 30px;
+}
+
+header.box {
+    border: solid violet 2px;
+}
+
+main.box {
+    border: solid orange 2px;
+}
+
+aside.box {
+    border: solid brown 2px;
+}
+
+footer.box {
+    border: solid teal 2px;
+}
+
+.ex5 .parent {
+    display: grid;
+    grid-template-rows: auto / auto;
+    gap: 10px;
+    padding: 10px;
+}
+
+.ex5 header {
+    grid-column: 1 / 8;
+}
+
+.ex5 .left {
+    grid-column: 1 / 2;
+}
+
+.ex5 main {
+    grid-column: 2 / 7;
+}
+
+.ex5 .right {
+    grid-column: 7 / 8;
+}
+
+.ex5 footer {
+    grid-column: 1 / 8;
 }
