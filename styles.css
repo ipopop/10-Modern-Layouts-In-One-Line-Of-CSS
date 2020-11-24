@@ -245,3 +245,26 @@ footer.box {
 .ex9 p {
     padding: 10px;
 }
+
+.ex10 .parent {
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.ex10 .card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.ex10 .visual {
+    aspect-ratio: 16 / 9;
+    background-color: hsla(170, 30%, 50%, 0.7);
+    margin: 10px 0;
+}
+
+.ex10 p {
+    padding: 10px;
+}
