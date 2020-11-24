@@ -220,3 +220,28 @@ footer.box {
 .ex8 p {
     padding: 10px;
 }
+
+.ex9 .parent {
+    height: auto;
+    display: grid;
+    place-items: center;
+    padding: 10px;
+}
+
+.ex9 .card {
+    width: clamp(23ch, 50%, 46ch);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.ex9 .visual {
+    height: 100px;
+    width: 100%;
+    background-color: hsla(170, 30%, 50%, 0.7);
+    margin: 10px 0;
+}
+
+.ex9 p {
+    padding: 10px;
+}
