@@ -13,6 +13,7 @@ html {
 }
 
 body {
+    width: 100vw;
     max-width: 1920px;
     display: grid;
     place-items: center;
