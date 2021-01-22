@@ -279,7 +279,7 @@ footer.box {
     padding: 10px;
 }
 
-@media (max-width: 375px;) {
+@media (max-width: 375px) {
     .parent {
         width: 90vw;
     }
