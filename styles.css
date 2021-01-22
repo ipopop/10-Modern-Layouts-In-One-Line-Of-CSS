@@ -14,6 +14,7 @@ html {
 
 body {
     width: 100vw;
+    min-width: 320px;
     max-width: 1920px;
     display: grid;
     place-items: center;
