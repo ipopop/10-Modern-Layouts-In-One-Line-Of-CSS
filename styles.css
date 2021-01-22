@@ -278,3 +278,9 @@ footer.box {
 .ex10 p {
     padding: 10px;
 }
+
+@media (max-width: 375px;) {
+    .parent {
+        width: 90vw;
+    }
+}
